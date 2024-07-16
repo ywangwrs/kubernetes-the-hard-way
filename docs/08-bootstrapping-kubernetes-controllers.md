@@ -166,8 +166,8 @@ curl -k --cacert ca.crt https://server.kubernetes.local:6443/version
 ```text
 {
   "major": "1",
-  "minor": "28",
-  "gitVersion": "v1.28.3",
+  "minor": "30",
+  "gitVersion": "v1.30.2",
   "gitCommit": "a8a1abc25cad87333840cd7d54be2efaf31a3177",
   "gitTreeState": "clean",
   "buildDate": "2023-10-18T11:33:18Z",

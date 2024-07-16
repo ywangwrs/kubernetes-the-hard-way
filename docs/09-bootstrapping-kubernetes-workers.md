@@ -24,9 +24,9 @@ done
 for host in node-0 node-1; do
   scp \
     downloads/runc.amd64 \
-    downloads/crictl-v1.28.0-linux-amd64.tar.gz \
-    downloads/cni-plugins-linux-amd64-v1.3.0.tgz \
-    downloads/containerd-1.7.8-linux-amd64.tar.gz \
+    downloads/crictl-v1.30.1-linux-amd64.tar.gz \
+    downloads/cni-plugins-linux-amd64-v1.5.1.tgz \
+    downloads/containerd-1.7.19-linux-amd64.tar.gz \
     downloads/kubectl \
     downloads/kubelet \
     downloads/kube-proxy \
@@ -95,9 +95,9 @@ Install the worker binaries:
 ```bash
 {
   mkdir -p containerd
-  tar -xvf crictl-v1.28.0-linux-amd64.tar.gz
-  tar -xvf containerd-1.7.8-linux-amd64.tar.gz -C containerd
-  tar -xvf cni-plugins-linux-amd64-v1.3.0.tgz -C /opt/cni/bin/
+  tar -xvf crictl-v1.30.1-linux-amd64.tar.gz
+  tar -xvf containerd-1.7.19-linux-amd64.tar.gz -C containerd
+  tar -xvf cni-plugins-linux-amd64-v1.5.1.tgz -C /opt/cni/bin/
   mv runc.amd64 runc
   chmod +x crictl kubectl kube-proxy kubelet runc
   mv crictl kubectl kube-proxy kubelet runc /usr/local/bin/
@@ -169,8 +169,8 @@ ssh root@server \
 
 ```
 NAME     STATUS   ROLES    AGE    VERSION
-node-0   Ready    <none>   1m     v1.28.3
-node-1   Ready    <none>   10s    v1.28.3
+node-0   Ready    <none>   1m     v1.30.2
+node-1   Ready    <none>   10s    v1.30.2
 ```
 
 Next: [Configuring kubectl for Remote Access](10-configuring-kubectl.md)
